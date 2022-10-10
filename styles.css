@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(214, 12%, 23%);
+    --darkBlue: hsl(212, 21%, 16%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --purple: hsl(228, 45%, 44%);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inactiveStars {
+    width: 40px;
+    height: 40px;
+    background-color: var(--darkBlue);
+    border-radius: 50%;
+
+}
+
+main {
+    width: 90%;
+    max-width: 375px;
+    height: 375px;
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    justify-content: space-between;
+}
+
+.submitMain {
+    align-items: center;
+    padding: 40px 18px;
+}
+
+.starsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.star {
+    width: 40px;
+    height: 40px;
+    background-color: var(--mediumGrey);
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(./images/icon-star.svg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--lightGrey);
+}
+
+.numbersContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.numbersContainer button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--mediumGrey);
+    color: var(--lightGrey);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+
+.numbersContainer button:hover {
+    background-color: var(--lightGrey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.numbersContainer button:focus {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+
+.boton {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    padding-top: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.boton:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    top: 96%;
+    color: var(--white);
+}
+
+.attribution a { 
+    color: var(--purple);
+ }
+
+ .centerText {
+    text-align: center;
+ }
+
+ .starsSelected {
+    background-color: var(--mediumGrey);
+    font-size: 1.5rem;
+    color: var(--orange);
+    padding: 10px 15px;
+    border-radius: 25px;
+ }
